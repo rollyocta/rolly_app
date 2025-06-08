@@ -1,0 +1,137 @@
+body.light .image-MainContainer {
+    position: relative; /* Needed for positioning the ::before */
+    background-image: url('../../../image/me/rolly-grad.jpg');
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: -1;
+}
+
+body.light .image-MainContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-image: url('../../../image/me/paint-flash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: screen;
+    z-index: 1;
+}
+
+body.dark .image-MainContainer {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+    background-color: #242424;
+    overflow: hidden;
+  }
+  
+ body.dark .image-MainContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  
+    /* This is your actual photo */
+    background-image: url('../../../image/me/rolly-grad.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    /* This is your white-trace paint flash as mask */
+    mask-image: url('../../../image/me/darkPaintFlash.png');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+    mask-mode: luminance;
+  
+    -webkit-mask-image: url('../../../image/me/darkPaintFlash.png');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
+    -webkit-mask-mode: luminance;
+  }
+  
+  
+  @media (max-width: 1200px) {
+    body.light .image-MainContainer {
+        position: relative; /* Needed for positioning the ::before */
+        background-image: url('../../../image/me/rolly-grad.jpg');
+        height: 370px;
+        width: 370px;
+        object-fit: contain;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        z-index: -5;
+    }
+    
+    body.light .image-MainContainer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        background-image: url('../../../image/me/paint-flash.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        mix-blend-mode: screen;
+        z-index: 100;
+    }
+
+    body.dark .image-MainContainer {
+        position: relative;
+        height: 370px;
+        width: 370px;
+        object-fit: contain;
+        background-color: #242424;
+        overflow: hidden;
+      }
+      
+     body.dark .image-MainContainer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      
+        /* This is your actual photo */
+        background-image: url('../../../image/me/rolly-grad.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      
+        /* This is your white-trace paint flash as mask */
+        mask-image: url('../../../image/me/darkPaintFlash.png');
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: cover;
+        mask-mode: luminance;
+      
+        -webkit-mask-image: url('../../../image/me/darkPaintFlash.png');
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: cover;
+        -webkit-mask-mode: luminance;
+      }
+}
+  
+  
+

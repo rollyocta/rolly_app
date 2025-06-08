@@ -1,0 +1,61 @@
+body.light .line {
+    background-color: #5e3bee;
+    height: 5px;
+    width: 250px;
+    border-radius: 100px;
+}
+
+body.dark .line {
+    background-color: #ffc107;
+    height: 5px;
+    width: 250px;
+    border-radius: 100px;
+}
+
+body.light .toolLogo {
+    border:1px solid #5e3bee;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+body.light .toolLogo .code {
+    color: #5e3bee;
+}
+
+body.light .codeLine {
+    background-color: #5e3bee;
+    height: 40px;
+    width: 4px;
+}
+
+body.dark .toolLogo {
+    border:1px solid #ffc107;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+body.dark .toolLogo .code {
+    color: #ffc107;
+}
+
+body.dark .codeLine {
+    background-color: #ffc107;
+    height: 40px;
+    width: 4px;
+}
+
+.tool-container {
+    height: 120px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9e1eb;
+    border-radius: 5px;
+}
+
+.tool-container img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

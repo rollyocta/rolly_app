@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.card-container {
+  perspective: 1000px;
+  z-index: 1;
+}
+
+.card {
+  position: relative;
+  /* width: 320px; */
+  padding: 2em;
+  color: white;
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease;
+  font-family: 'Poppins', sans-serif;
+  z-index: 1;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(var(--angle, 135deg), rgba(255,255,255,0.1), rgba(255,255,255,0));
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+  transition: background 0.2s ease;
+}
+
+.glow {
+  position: absolute;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at center, rgba(0, 255, 200, 0.2), transparent 80%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: top 0.1s, left 0.1s, opacity 0.3s ease;
+  z-index: 0;
+}
+
+.card:hover .glow {
+  opacity: 1;
+}
