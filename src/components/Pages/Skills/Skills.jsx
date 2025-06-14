@@ -10,7 +10,7 @@ const Skills = () => {
   const [isFrontend, setIsFrontend] = useState(true); // State to toggle between frontend and backend
 
   return (
-    <section className='d-flex justify-content-center align-items-center pt-5 mb-5'>
+    <section className='d-flex justify-content-center align-items-center pt-5 mb-5' id="Skills">
       <div className='row container mt-5'>
         <div className='col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center flex-column'>
           

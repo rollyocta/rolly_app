@@ -20,11 +20,21 @@ const Header = ({ isOpen, toggleMenu }) => {
       <h5 className='logo-name'>Rolly Dev</h5>
 
       <ul className='nav-menu'>
-        <li className='nav-list'>Home</li>
-        <li className='nav-list'>About</li>
-        <li className='nav-list'>Work</li>
-        <li className='nav-list'>Skills</li>
-        <li className='nav-list'>Contact</li>
+        <a href='#Home' style={{textDecoration:"none", color:"#333"}}>
+          <li className='nav-list'>Home</li>
+        </a> 
+        <a href='#Skills' style={{textDecoration:"none", color:"#333"}}>
+          <li className='nav-list'>Skills</li>
+        </a> 
+        <a href='#About' style={{textDecoration:"none", color:"#333"}}>
+          <li className='nav-list'>About</li>
+        </a> 
+        <a href='#Work' style={{textDecoration:"none", color:"#333"}}>
+          <li className='nav-list'>Work</li>
+        </a> 
+        <a href='#Contact' style={{textDecoration:"none", color:"#333"}}>
+          <li className='nav-list'>Contact</li>
+        </a> 
       </ul>
 
       <div className='toggle-container'>
