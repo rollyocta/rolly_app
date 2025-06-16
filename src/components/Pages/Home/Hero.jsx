@@ -8,7 +8,7 @@ import rollyImage from '../../../image/me/sample_model.png';
 const Hero = () => {
 
   return (
-    <section className='d-flex justify-content-center align-items-center pt-5 mb-5 hero' id="Home">
+    <section className='d-flex justify-content-center align-items-center pt-5 hero' id="Home">
     <div className='row container mt-5'>
       <div className='col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center mb-5'>
         <motion.div

@@ -9,6 +9,7 @@ import Sidebar from './components/Navbar/Sidebar.jsx';
 import Hero from './components/Pages/Home/Hero.jsx';
 import About from './components/Pages/About/About.jsx';
 import Skills from './components/Pages/Skills/Skills.jsx';
+import Work from './components/Pages/Work/Work.jsx';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ function App() {
       <Hero />
       <Skills />
       <About />
-      {/* <About /> */}
+      <Work />
 
       {/* Optional content */}
       {/* <div className="card-container">

@@ -134,4 +134,127 @@ body.dark .image-MainContainer {
 }
   
   
+/* timeline style */
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+.timeline-item {
+  width: calc(50% + 1px);
+  padding: 0.5rem 2rem;
+  position: relative;
+}
+body.light .timeline-item-right {
+  align-self: flex-end;
+  border-left: 2px solid #5e3bee;
+}
+body.light .timeline-item-left {
+  align-self: flex-start;
+  border-right: 2px solid #5e3bee;
+}
 
+body.light .timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: #5e3bee;
+  z-index: 9999;
+  top: 1.35rem;
+}
+
+body.dark .timeline-item-right {
+  align-self: flex-end;
+  border-left: 2px solid #ffc107;
+}
+body.dark .timeline-item-left {
+  align-self: flex-start;
+  border-right: 2px solid #ffc107;
+}
+
+body.dark .timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: #ffc107;
+  z-index: 9999;
+  top: 1.35rem;
+}
+
+.timeline-item-right::after {
+  left: -11px;
+}
+.timeline-item-left::after {
+  right: -11px;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+  /* color: #666; */
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+  width: 100%;
+}
+.timeline-item-left * {
+  text-align: end;
+}
+
+.timeline-content span {
+  font-size: 15px;
+  /* color: #a4a4a4; */
+}
+
+.timeline-content p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  text-align: justify;
+  /* color: #888; */
+}
+
+@media screen and (max-width: 1024px) {
+  body.light .timeline-item {
+    width: 100%;
+    padding: 1.35rem 2rem;
+    border-right: none;
+    border-left: 2px solid #5e3bee;
+  }
+
+  body.dark .timeline-item {
+    width: 100%;
+    padding: 1.35rem 2rem;
+    border-right: none;
+    border-left: 2px solid #ffc107;
+  }
+
+  .timeline-item-right {
+    align-self: flex-start;
+  }
+
+  .timeline-item-left * {
+    text-align: start;
+  }
+  .timeline-item-left::after {
+    right: auto;
+    left: -11px;
+  }
+  .timeline-item::after {
+    top: 2rem;
+  }
+}
+
+
+/* end of timeline style */
