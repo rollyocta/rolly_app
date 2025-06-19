@@ -16,7 +16,14 @@
   }
 }
 
-.work-info .text-stroke {
+body.light .work-info .text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+body.dark .work-info .text-stroke {
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   font-weight: bolder;
@@ -24,19 +31,23 @@
 }
 
 .work-info h1 {
-  color: #fff;
   font-size: 35px;
 }
 
 .work-info p {
-  color: #fff;
   width: 350px;
   font-size: 13px;
   text-align: justify;
 }
 
-.work-info span {
-  color: #2dfa9d;
+body.light .work-info span {
+  color: #5e3bee;
+  width: 300px;
+  font-size: 18px;
+}
+
+body.dark .work-info span {
+  color: #ffc107;
   width: 300px;
   font-size: 18px;
 }
@@ -72,7 +83,7 @@
 }
 
 .work-button button {
-  background: #2dfa9d;
+  background: #c9e1eb;
   padding: 5px;
   border-radius: 100%;
 }

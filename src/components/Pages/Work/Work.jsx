@@ -56,7 +56,7 @@ const Work = () => {
     };
 
   return (
-    <section className='work pt-5'>
+    <section className='work mt-5'>
       
       <div>
         <h1 className="fw-bold text-center">My Work</h1>

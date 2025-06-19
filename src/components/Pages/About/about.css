@@ -147,10 +147,12 @@ body.dark .image-MainContainer {
 body.light .timeline-item-right {
   align-self: flex-end;
   border-left: 2px solid #5e3bee;
+  background-color: #c9e1eb;
 }
 body.light .timeline-item-left {
   align-self: flex-start;
   border-right: 2px solid #5e3bee;
+  background-color: rgba(0,0,0,0.1);
 }
 
 body.light .timeline-item::after {
@@ -168,10 +170,12 @@ body.light .timeline-item::after {
 body.dark .timeline-item-right {
   align-self: flex-end;
   border-left: 2px solid #ffc107;
+  background-color: #2b3a42;
 }
 body.dark .timeline-item-left {
   align-self: flex-start;
   border-right: 2px solid #ffc107;
+  background-color: rgba(0,0,0,0.4);
 }
 
 body.dark .timeline-item::after {
